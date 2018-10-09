@@ -1,4 +1,4 @@
-package com.example.hpsus.timercustom;
+package com.example.hpsus.timercustom.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

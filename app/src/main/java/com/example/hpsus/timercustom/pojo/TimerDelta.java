@@ -1,28 +1,27 @@
-package com.example.hpsus.timercustom;
+package com.example.hpsus.timercustom.pojo;
 
-
-import android.text.format.Time;
+import java.util.GregorianCalendar;
 
 public class TimerDelta {
 
-    private Time timeUst;
-    private Time timeNow;
+    private GregorianCalendar timeUst;
+    private GregorianCalendar timeNow;
     private Boolean push;
     private Boolean visible;
 
-    public Time getTimeUst() {
+    public GregorianCalendar getTimeUst() {
         return timeUst;
     }
 
-    public void setTimeUst(Time timeUst) {
+    public void setTimeUst(GregorianCalendar timeUst) {
         this.timeUst = timeUst;
     }
 
-    public Time getTimeNow() {
+    public GregorianCalendar getTimeNow() {
         return timeNow;
     }
 
-    public void setTimeNow(Time timeNow) {
+    public void setTimeNow(GregorianCalendar timeNow) {
         this.timeNow = timeNow;
     }
 

@@ -1,4 +1,4 @@
-package com.example.hpsus.timercustom;
+package com.example.hpsus.timercustom.pojo;
 
 import java.util.List;
 

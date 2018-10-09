@@ -7,19 +7,23 @@
 
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/progressTimer"
         android:layout_width="162dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="0dp">
 
         <ProgressBar
             android:id="@+id/progressBar"
             style="@android:style/Widget.ProgressBar.Large"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_centerInParent="true" />
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
 
         <TextView
             android:id="@+id/tv_progress_circle"
@@ -29,6 +33,26 @@
             android:background="@android:color/transparent"
             android:gravity="center"
             android:text="45:00"
-            android:textColor="@android:color/red" />
+            android:textColor="@color/colorAccent" />
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnStart"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="151dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnReset"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="152dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </android.support.constraint.ConstraintLayout>

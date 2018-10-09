@@ -11,35 +11,43 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.PopupOverlay">
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/colorAccent"
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:title="@string/title_timer_name" />
 
         </android.support.design.widget.AppBarLayout>
 
-        <fragment
-            android:id="@+id/progressTimer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/card_row" />
-
-        <fragment
-            android:id="@+id/card_recycler_view"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            tools:layout="@layout/fragment_timer" />
+            android:orientation="horizontal">
 
+
+            <fragment
+                android:id="@+id/progressTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:layout="@layout/card_row" />
+
+            <fragment
+                android:id="@+id/card_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                tools:layout="@layout/fragment_timer" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
