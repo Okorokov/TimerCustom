@@ -8,4 +8,9 @@
     <string name="btnStart">Start</string>
     <string name="btnReset">Reset</string>
     <string name="titleDialog">Set Time</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Hour">Hour</string>
+    <string name="Minute">Minute</string>
+    <string name="Secund">Secund</string>
 </resources>
