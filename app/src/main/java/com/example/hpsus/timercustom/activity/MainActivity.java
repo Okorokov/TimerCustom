@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 import com.example.hpsus.timercustom.R;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        timePickerFragment = new TimePickerFragment();
+
 
         recyclerView = findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showTimeDialog(View v){
-//        timePickerFragment.onCreateDialog()
+        Log.d("-----------","Запуск dialog Frame");
+        timePickerFragment = new TimePickerFragment();
     }
 }
