@@ -29,16 +29,16 @@
 
         <fragment
             android:id="@+id/progressTimer"
+            android:name="com.example.hpsus.timercustom.activity.fragment.CardRowFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="com.example.hpsus.timercustom.activity.fragment.CardRowFragment"
             tools:layout="@layout/card_row" />
 
         <fragment
-            android:id="@+id/card_recycler_view"
+            android:id="@+id/cardRecyclerView"
+            android:name="com.example.hpsus.timercustom.activity.fragment.TimerFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.example.hpsus.timercustom.activity.fragment.TimerFragment"
             tools:layout="@layout/fragment_timer" />
 
 
